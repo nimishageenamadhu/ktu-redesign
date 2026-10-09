@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KTU | Student Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+  <header class="topbar">
+    <a class="brand" href="home.html">
+      <span>Kerala Technical University</span>
+    </a>
+    <a class="login-home-link" href="home.html">← Back to Home</a>
+  </header>
+
+  <main class="login-container">
+    <section class="login-card">
+
+      <div class="login-logo">K</div>
+
+      <p class="eyebrow">STUDENT PORTAL</p>
+      <h1>Welcome Back!</h1>
+      <p class="login-subtitle">
+        Sign in to access your academic dashboard.
+      </p>
+
+      <form id="loginForm">
+  <label for="studentId">Student ID / Username</label>
+  <input
+    type="text"
+    id="studentId"
+    placeholder="Enter your student ID"
+    required
+  >
+
+  <label for="password">Password</label>
+  <div class="password-box">
+    <input
+      type="password"
+      id="password"
+      placeholder="Enter your password"
+      required
+    >
+    <button type="button" id="togglePassword"
+      class="show-password">Show</button>
+  </div>
+
+  <div class="login-options">
+    <label class="remember-label">
+      <input type="checkbox" id="rememberMe">
+      Remember me
+    </label>
+    <a href="#" id="forgotPassword">Forgot password?</a>
+  </div>
+
+  <button type="submit" class="button login-button">
+    Sign In →
+  </button>
+
+  <p id="loginMessage" class="login-message"></p>
+</form>
+      <div class="login-divider">
+        <span>STUDENT ACCESS</span>
+      </div>
+
+      <p class="login-footer">
+        Academic resources, examinations and results — all in one place.
+      </p>
+
+      <p class="demo-note">
+        Demo interface only. No real account authentication is enabled.
+      </p>
+    </section>
+  </main>
+
+  <footer>© 2026 KTU Website Redesign Concept</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

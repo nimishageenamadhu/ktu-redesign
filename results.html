@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KTU | Results</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">KTU <span>Kerala Technological University</span></a>
+    <nav><a href="login.html">Login</a>
+      <a href="home.html">Home</a>
+      <a href="academics.html">Academics</a>
+      <a href="examinations.html">Examinations</a>
+      <a href="results.html">Results</a>
+      <a href="services.html">Student Services
+      <button type="button" id="logoutButton" class="button">
+  Logout
+</button>
+      </a>
+    </nav>
+  </header>
+
+  <main class="wrap page">
+    <p class="eyebrow">RESULTS DASHBOARD</p>
+    <h1>Result Analysis</h1>
+    <p>Explore sample academic performance data.</p>
+
+    <section class="panel">
+      <label for="resultSemester">Select semester</label>
+      <select id="resultSemester"></select>
+      <button class="button" id="analyseBtn">Analyse Results</button>
+
+      <div class="stats">
+        <article class="stat">
+          <p>Average Marks</p>
+          <h2>78%</h2>
+        </article>
+        <article class="stat">
+          <p>Pass Percentage</p>
+          <h2>92%</h2>
+        </article>
+        <article class="stat">
+          <p>Subjects Analysed</p>
+          <h2>5</h2>
+        </article>
+      </div>
+
+      <div class="chart-card">
+        <h2>Subject-wise Performance</h2>
+        <canvas id="performanceChart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h2>Grade Distribution</h2>
+        <canvas id="gradeChart"></canvas>
+      </div>
+    </section>
+    <p class="hint">All figures are fictional demonstration data.</p>
+  </main>
+
+  <footer>© 2026 KTU Website Redesign Concept</footer>
+  <script src="script.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KTU | Examinations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">KTU <span>Kerala Technological University</span></a>
+    <nav><a href="login.html">Login</a>
+      <a href="home.html">Home</a>
+      <a href="academics.html">Academics</a>
+      <a href="examinations.html">Examinations</a>
+      <a href="results.html">Results</a>
+      <a href="services.html">Student Services
+        <button type="button" id="logoutButton" class="button">
+  Logout
+</button>
+      </a>
+    </nav>
+  </header>
+
+  <main class="wrap page">
+    <p class="eyebrow">EXAMINATION PORTAL</p>
+    <h1>Examination Timetable</h1>
+    <p>Choose your examination type and semester.</p>
+
+    <section class="panel">
+      <div class="filters">
+        <div>
+          <label for="examType">Examination type</label>
+          <select id="examType">
+            <option value="Regular">Regular</option>
+            <option value="Supplementary">Supplementary</option>
+          </select>
+        </div>
+        <div>
+          <label for="examSemester">Semester</label>
+          <select id="examSemester"></select>
+        </div>
+        <button class="button" id="viewTimetable">View Timetable</button>
+      </div>
+
+      <h2 id="tableHeading">Examination Schedule</h2>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Subject Code</th>
+              <th>Subject</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody id="timetableBody"></tbody>
+        </table>
+      </div>
+    </section>
+    <p class="hint">The timetable is demonstration data, not an official KTU schedule.</p>
+  </main>
+
+  <footer>© 2026 KTU Website Redesign Concept</footer>
+  <script src="script.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
